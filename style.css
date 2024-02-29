@@ -1,0 +1,58 @@
+nav{
+    width: 100%;
+}
+
+/* li{ 
+    <li style = "display-inline-block" >
+ } */
+ div th{
+    background-color: crimson;
+ }
+
+ ul{
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    margin: 3% 0 3% 0 ;
+    
+    /* border-width: 5px; */
+    
+ }
+
+ li{
+    display: inline-block;
+    background-color: yellow;
+    /* margin-top: 50px; */
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    border-style: solid;
+    border-color: black;
+/* text-indent: 50px; */
+    margin-top:5px;
+    width: 19%;
+    height: 50px;
+ }
+
+ .home{  
+    background-color: red;
+    color: white;     
+ }
+ .achievement{
+  
+    background-color: white;
+    color: red;
+ } 
+ .biography{
+ 
+    background-color: navy;
+    color: white;
+ }
+ .award{  
+    background-color: white;
+    color:red;
+ }
+ .info{
+    background-color: red;
+    color: white;
+ }

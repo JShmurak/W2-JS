@@ -1,0 +1,3 @@
+[submodule "W2-JS"]
+	path = W2-JS
+	url = https://github.com/JShmurak/W2-JS.git
