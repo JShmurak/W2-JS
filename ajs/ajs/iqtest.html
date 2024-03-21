@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="question">Question will appear here</div>
+        <div id="answers" class="answers">
+            <!-- Answer buttons will be inserted here -->
+        </div>
+        <button id="next" onclick="nextQuestion()">Next Question</button>
+        <div id="feedback"></div>
+    </div>
+    <div id="score-container">
+        Your score: <span id="score">0</span>
+    </div>
+    <div id="high-scores">High Scores: <span id="highScoresList"></span></div>
+    <script src="iqtest.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>IQ Test</title>
+<style>
+    #element1 {
+            background-color: #e74c3c; 
+            border: 2px solid #c0392b; 
+            padding: 20px;
+            margin: 10px;
+    }
+            @keyframes slideIn 
+            {
+            0% { transform: translateY(-100px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+           /*keyframes: declare the styles that the animation will apply at certain times
+           Slide in: In the context of JavaScript usually refers to an animation effect
+           opacity: Can control its transparency*/
+
+        #animatedText {
+            animation: slideIn 1s ease-out forwards; 
+            background-color: #e74c3c; 
+            border: 2px solid #c0392b; 
+            padding: 20px;
+            margin: 10px;
+        }
+    body {
+        background-color: darkgray;
+        border: 2px solid darkgrey;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+
+    #timer {
+        background-color: black;
+        display: flex;
+      font-size: 24px;
+      text-align: end;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+    
+    <div id="animatedText">
+        <p>IQuestion<br>Experience your Brain Power.</p>
+    </div>
+    
+<div id="timer"></div>
+<div id="quiz"></div>
+<button onclick="submitAnswers()">Submit</button>
+<div id="results"></div>
+<div class="animated-element"></div>
+
+<script src="test.js">
+    
+  let timeInSeconds = 100; 
+const interval = 100000; 
+
+function updateTimer() {
+  const timerElement = document.getElementById('timer');
+  timerElement.innerHTML = `Time remaining: ${formatTime(timeInSeconds)}`;
+  timeInSeconds--;
+
+  if (timeInSeconds < 0) {
+    clearInterval(timerInterval);
+    timerElement.innerHTML = "Time's up! You Loss";
+  }
+}
+
+
+const timerInterval = setInterval(updateTimer, interval);
+
+function fadeIn() {
+            document.body.style.opacity = 1;
+        }
+
+        window.onload = fadeIn;
+</script>
+</body>
+</html>
